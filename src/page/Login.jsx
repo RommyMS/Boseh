@@ -1,18 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import logoO from './assets/Logo_O.png';
+import '../style/Login.css'
 
 
 function Login() {
 
   return (
     <>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login BOSEH</title>
-  <link rel="stylesheet" href="Style_Login.css" />
   <div className="container">
     <header className="header">
       <h1 className="logo">
