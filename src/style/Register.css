@@ -28,7 +28,7 @@ body {
   text-align: left;
   padding: 20px;
   border-radius: 10px 10px 0 0;
-  width: 100%;
+  width: 150%;
 }
 
 .logo {
@@ -51,15 +51,16 @@ body {
   margin: 0 5px;
 }
 
-.login-form {
+.register-form {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 200%;
+  max-width: 700px;
 }
 
-.login-form h2 {
+.register-form h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -81,8 +82,8 @@ body {
   border-radius: 4px;
 }
 
-.login-button {
-  width: 100%;
+.register-button {
+  width: 35%;
   padding: 10px;
   background-color: #4caf50;
   color: white;
@@ -93,7 +94,7 @@ body {
   font-weight: bold;
 }
 
-.login-button:hover {
+.register-button:hover {
   background-color: #45a049;
 }
 

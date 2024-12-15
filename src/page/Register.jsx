@@ -12,8 +12,8 @@ function Register() {
         SEH
       </h1>
     </header>
-    <main className="login-form">
-      <h2>Login</h2>
+    <main className="register-form">
+      <h2>Register</h2>
       <form action="#" method="post">
         <div className="input-group">
           <label htmlFor="Nama">Nama</label>
@@ -60,12 +60,12 @@ function Register() {
             placeholder="Password"
           />
         </div>
-        <button type="submit" className="login-button">
-          LOGIN
+        <button type="submit" className="register-button">
+          REGISTER
         </button>
       </form>
       <p className="register-link">
-        Belum punya akun? <a href="#">Daftar di sini</a>
+        Sudah punya akun? <a href="#">Login di sini</a>
       </p>
     </main>
   </div>

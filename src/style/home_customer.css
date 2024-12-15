@@ -12,11 +12,12 @@ body {
 
 .header {
     background-color: #4caf50;
-    text-align: left;
+    text-align: center;
     padding: 20px;
     border-radius: 10px 10px 0 0;
     width: 100%;
-  }
+    max-width: 370px;
+}
 
 .logo {
     font-size: 2.5rem;
@@ -26,15 +27,16 @@ body {
     margin: 0;
     display: inline-flex;
     align-items: center;
-  }
+}
 
-  .welcome-form {
+.welcome-form {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-  }
+    width: 200%;
+    max-width: 700px;
+}
 
 .header img {
     height: 40px;
