@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../style/Register.css'
 
 
@@ -6,12 +7,12 @@ function Register() {
   return (
     <>
   <div className="container">
-    <header className="header">
+    <div className="header_register">
       <h1 className="logo">
         B<span className="logo-o" />
         SEH
       </h1>
-    </header>
+    </div>
     <main className="register-form">
       <h2>Register</h2>
       <form action="#" method="post">
@@ -60,12 +61,14 @@ function Register() {
             placeholder="Password"
           />
         </div>
+        <Link to="http://localhost:5173/login">
         <button type="submit" className="register-button">
           REGISTER
         </button>
+        </Link>
       </form>
       <p className="register-link">
-        Sudah punya akun? <a href="#">Login di sini</a>
+        Sudah punya akun? <a href="http://localhost:5173/login">Login di sini</a>
       </p>
     </main>
   </div>

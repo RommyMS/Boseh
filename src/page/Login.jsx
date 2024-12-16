@@ -1,4 +1,5 @@
 import '../style/Login.css'
+import { Link, Navigate } from 'react-router-dom'
 
 
 function Login() {
@@ -6,7 +7,7 @@ function Login() {
   return (
     <>
   <div className="container">
-    <header className="header">
+    <header className="header_login">
       <h1 className="logo">
         B<span className="logo-o" />
         SEH
@@ -33,12 +34,14 @@ function Login() {
             placeholder="Password"
           />
         </div>
+        <Link to="http://localhost:5173/customer">
         <button type="submit" className="login-button">
           LOGIN
         </button>
+        </Link>
       </form>
       <p className="register-link">
-        Belum punya akun? <a href="#">Daftar di sini</a>
+        Belum punya akun? <a href="http://localhost:5173/register">Daftar di sini</a>
       </p>
     </main>
   </div>

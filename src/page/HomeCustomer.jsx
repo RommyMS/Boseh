@@ -1,10 +1,11 @@
 import React from 'react'
 import '../style/home_customer.css'
+import { Link } from 'react-router-dom'
 
 const HomeCustomer = () => {
   return (
     <>
-    <div class="header">
+    <div class="header_customer">
       <h1 className="logo">
         B<span className="logo-o" />
         SEH
@@ -23,12 +24,18 @@ const HomeCustomer = () => {
       <input type="text" id="phone"/>
     </div>
     <div className="buttons">
+      <Link to="http://localhost:5173/">
       <button id="logoutButton" className="logout">
         Logout
       </button>
+      </Link>
+      
+      <Link to="http://localhost:5173/pemesanan">
       <button id="orderButton" className="order">
         Buat Pemesanan Sepeda
       </button>
+      </Link>
+      
     </div>
   </div>
     

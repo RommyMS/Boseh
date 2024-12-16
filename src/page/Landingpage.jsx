@@ -1,16 +1,18 @@
 import React from 'react'
-
+import '../style/Landingpage.css'
+import { Link } from 'react-router-dom'
 
 function Landingpage() {
   return (
     <div>
         <>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BOSEH - Pedalmu, Kontribusimu</title>
   <link rel="stylesheet" href="styles.css" />
   <nav className="navbar">
-    <div className="logo">BOSEH</div>
+  <h1 className="logo">
+        B<span className="logo-o" />
+        SEH
+      </h1>
     <ul>
       <li>
         <a href="#products">Products</a>
@@ -29,8 +31,12 @@ function Landingpage() {
       <h1>BOSEH</h1>
       <h2>Pedalmu, Kontribusimu</h2>
       <div className="buttons">
-        <button className="btn btn-signin">Sign in</button>
+        <Link to="http://localhost:5173/login">
+        <button className="btn btn-signin">Login</button>
+        </Link>
+        <Link to="http://localhost:5173/register">
         <button className="btn btn-register">Register</button>
+        </Link>           
       </div>
     </div>
   </header>
@@ -38,7 +44,7 @@ function Landingpage() {
     <h3>Best Product</h3>
     <div className="product-container">
       <div className="product-card">
-        <img src="polygon.jpg" alt="Sepeda polygon" />
+        <img src="src/assets/Polygon.png" alt="Sepeda Polygon" />
         <h4>Sepeda Polygon</h4>
         <p>
           Cocok untuk berbagai jenis medan, mulai dari jalan perkotaan hingga
@@ -46,16 +52,16 @@ function Landingpage() {
         </p>
       </div>
       <div className="product-card">
-        <img src="senator.jpg" alt="Sepeda senator" />
-        <h4>Sepeda Senator</h4>
+        <img className="solomo" src="src/assets/Solomo.png" alt="Sepeda Solomo" />
+        <h4>Sepeda Solomo</h4>
         <p>
           Cocok digunakan di berbagai jenis medan, dari jalanan perkotaan hingga
           jalanan ringan di alam terbuka.
         </p>
       </div>
       <div className="product-card">
-        <img src="odessy.jpg" alt="Sepeda odessy" />
-        <h4>Sepeda Odessy</h4>
+      <img className="detroit" src="src/assets/Detroit.png" alt="Sepeda Detroit" />
+        <h4>Sepeda Detroit</h4>
         <p>
           Cocok untuk jalan perkotaan dan aktivitas luar ruangan, sepeda ini
           ringan namun tangguh.
